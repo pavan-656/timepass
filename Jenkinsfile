@@ -34,7 +34,7 @@ pipeline {
                                                   }
                      steps{
 					 dir ('/mnt/docky') {
-					 sh "docker-compose down"
+					 sh "sudo docker-compose down"
 					 sh " rm -rf *"
 					 sh "git clone https://github.com/pavan-656/timepass.git"
 					 
@@ -50,7 +50,7 @@ pipeline {
                                                   }
                      steps{
 					 dir ('/mnt/docky') {
-					 sh "docker-compose down"
+					 sh "sudo docker-compose down"
 					 sh " rm -rf *"
 					 sh "git clone https://github.com/pavan-656/timepass.git"
                             sh "sudo docker-compose up -d --scale httpd-server=2"
@@ -65,7 +65,7 @@ pipeline {
                                                   }
                      steps{
 					 dir ('/mnt/docky') {
-					 sh "docker-compose down"
+					 sh "sudo docker-compose down"
 					 sh " rm -rf *"
 					 sh "git clone https://github.com/pavan-656/timepass.git"
                             sh "sudo docker-compose up -d --scale httpd-server=2"
@@ -81,7 +81,7 @@ pipeline {
                                                   }
                      steps{
 					 dir ('/mnt/docky') {
-					 sh "docker-compose down"
+					 sh "sudo docker-compose down"
 					 sh " rm -rf *"
 					 sh "git clone https://github.com/pavan-656/timepass.git"
                             sh "sudo docker-compose up -d --scale httpd-server=2"
