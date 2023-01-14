@@ -37,6 +37,7 @@ pipeline {
 					 sh "sudo docker-compose down"
 					 sh " rm -rf *"
 					 sh "git clone https://github.com/pavan-656/timepass.git"
+						 sh "cd /mnt/docky/timepass"
 					 
                             sh "sudo docker-compose up -d --scale httpd-server=2"
                                                        }
@@ -53,6 +54,7 @@ pipeline {
 					 sh "sudo docker-compose down"
 					 sh " rm -rf *"
 					 sh "git clone https://github.com/pavan-656/timepass.git"
+						 sh "cd /mnt/docky/timepass"
                             sh "sudo docker-compose up -d --scale httpd-server=2"
                                                        }
 					                                      }
@@ -68,6 +70,7 @@ pipeline {
 					 sh "sudo docker-compose down"
 					 sh " rm -rf *"
 					 sh "git clone https://github.com/pavan-656/timepass.git"
+						 sh "cd /mnt/docky/timepass"
                             sh "sudo docker-compose up -d --scale httpd-server=2"
                                                        }
 					                                      }
@@ -84,6 +87,7 @@ pipeline {
 					 sh "sudo docker-compose down"
 					 sh " rm -rf *"
 					 sh "git clone https://github.com/pavan-656/timepass.git"
+						 sh "cd /mnt/docky/timepass"
                             sh "sudo docker-compose up -d --scale httpd-server=2"
                                                        }
 					                                      }
